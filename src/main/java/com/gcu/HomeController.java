@@ -3,6 +3,7 @@ package com.gcu;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 
 
@@ -17,5 +18,15 @@ public class HomeController {
 public String getHome() {
 	
 	return "hello world";
+}
+
+
+@RequestMapping("/payment")
+
+public ModelAndView getPayment() {
+	
+	ModelAndView modelAndView = new ModelAndView();
+	modelAndView.setViewName("payment");
+	return modelAndView;
 }
 }
