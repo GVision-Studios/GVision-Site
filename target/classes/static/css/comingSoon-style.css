@@ -1,0 +1,30 @@
+.container
+{
+	height:300px;
+	width:100%;
+}
+
+.leftSection
+{
+	position:relative;
+	width:33%;
+	display:block;
+	height:300px;
+	float:left;
+}
+.firstPicture
+{
+	position:relative;
+	width:33%;
+	display:block;
+	height:300px;
+	float:left;
+}
+.secondPicture
+{
+	position:relative;
+	width:33%;
+	display:block;
+	height:300px;
+	float:left;
+}
