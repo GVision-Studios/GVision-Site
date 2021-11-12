@@ -13,12 +13,6 @@ public class HomeController {
 	
 
 
-@RequestMapping("/")
-
-public String getHome() {
-	
-	return "hello world";
-}
 
 
 @RequestMapping("/payment")
@@ -39,12 +33,18 @@ public ModelAndView getContact() {
 	return modelAndView;
 }
 
-@RequestMapping("/comingsoon")
 
-public ModelAndView getComingsoon() {
+
+@RequestMapping("/")
+
+public ModelAndView gehome() {
 	
 	ModelAndView modelAndView = new ModelAndView();
-	modelAndView.setViewName("comingSoon");
+	modelAndView.setViewName("home");
 	return modelAndView;
 }
+
+
+
+
 }
