@@ -38,4 +38,13 @@ public ModelAndView getContact() {
 	modelAndView.setViewName("Contactus");
 	return modelAndView;
 }
+
+@RequestMapping("/comingsoon")
+
+public ModelAndView getComingsoon() {
+	
+	ModelAndView modelAndView = new ModelAndView();
+	modelAndView.setViewName("comingSoon");
+	return modelAndView;
+}
 }
