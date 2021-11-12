@@ -29,4 +29,13 @@ public ModelAndView getPayment() {
 	modelAndView.setViewName("payment");
 	return modelAndView;
 }
+
+@RequestMapping("/contactus")
+
+public ModelAndView getContact() {
+	
+	ModelAndView modelAndView = new ModelAndView();
+	modelAndView.setViewName("Contactus");
+	return modelAndView;
+}
 }
