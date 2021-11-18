@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://www.thymeleaf.org" >
 <head>
 
 <style>
@@ -19,26 +19,27 @@ background-color: green;
 
 <h1>   Customer Information</h1>
 
-<form action="">
-  <label for="fname">First name</label>
-  <input type="text" id="fname" name="fname"><br><br>
+<form action="#" th:action="@{/informationsubmit}" th:object="${processinformation}" method="post">
+
+  <label  for="fname">First name</label>
+  <input type="text" th:field="*{FirstName}" id="fname" name="fname"><br><br>
   
   <label for="lname">Last name</label>
-  <input type="text" id="lname" name="lname"><br><br>
+  <input type="text" th:field="*{LastName}" id="lname" name="lname"><br><br>
   
    
   <label for="Address">Address</label>
-    <input type="text" id="Address" name="Address"><br><br>
+    <input type="text" th:field="*{Address}" id="Address" name="Address"><br><br>
     
     <label for="Country"> Country</label>
-      <input type="text" id="Country" name="Country"><br><br>
+      <input type="text" th:field="*{Country}"  id="Country" name="Country"><br><br>
   <input  id="button" type="submit" value="Submit">
 </form>
 
 
 
 <h2> Payments Details</h2>
-<form action="">
+<form action="#" th:action="@{/processpayment}" th:object="${processpayment}" method="post">
   <label for="Cardnumber">Card Number</label>
   <input type="text" id="cardnum" ><br><br>
   
