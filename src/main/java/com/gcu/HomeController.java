@@ -30,15 +30,7 @@ public String getPayment(Model model) {
 	
 }
 
-@RequestMapping("/processpayment")
-public ModelAndView processPayment() {
-	
 
-	ModelAndView modelAndView = new ModelAndView();
-	modelAndView.setViewName("paymentsubmission");
-	return modelAndView;
-	
-}
 
 
 
@@ -46,16 +38,34 @@ public ModelAndView processPayment() {
 public String informationSubmit(@ModelAttribute FormSubmission formsubmission ,Model model) {
 	
 	model.addAttribute("processinformation", formsubmission);
-	return "paymentsubmission";
+	return "informationsubmission";
 }
 
-@RequestMapping("/contactus")
 
-public ModelAndView getContact() {
+@PostMapping("/contactussubmit")
+public  String contactusSubmit(@ModelAttribute Contactus contacus, Model model) {
+	
+	model.addAttribute("processcontactus", contacus);
+	return "contactussubmission";
+	
+}
+
+
+@PostMapping("/paymentsubmit")
+public ModelAndView payhmentSubmit() {
 	
 	ModelAndView modelAndView = new ModelAndView();
-	modelAndView.setViewName("Contactus");
+	modelAndView.setViewName("paymentsubmission");
 	return modelAndView;
+}
+@RequestMapping("/contactus")
+
+public String getContact(Model model) {
+	
+	
+	model.addAttribute("processcontactus", new Contactus());
+	
+	return "Contactus";
 }
 
 
