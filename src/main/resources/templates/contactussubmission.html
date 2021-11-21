@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" >
+<head>
+
+<style>
+
+body{ background-color: orange;}
+
+button{
+background-color: green;
+}
+</style>
+<meta charset="UTF-8">
+<title> Information page</title>
+</head>
+<body>
+
+
+
+
+
+<h2> Contact us Page</h2>
+
+<p> Thank You 
+<p th:text=" ${processcontactus.FirstName}"/> 
+<p th:text=" ${processcontactus.LastName}"/>
+
+<p> We will contact you soon as we can </p>
+</body>
+</html>

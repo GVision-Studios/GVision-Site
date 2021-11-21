@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" >
+<head>
+
+<style>
+
+body{ background-color: orange;}
+
+button{
+background-color: green;
+}
+</style>
+<meta charset="UTF-8">
+<title> Information page</title>
+</head>
+<body>
+
+
+
+
+
+<h2> Information Page</h2>
+
+
+<p th:text=" 'First name: ' + ${processinformation.FirstName}"/>
+<p th:text=" 'Last name: ' + ${processinformation.LastName}"/>
+<p th:text=" 'Address: ' + ${processinformation.Address}"/>
+<p th:text=" 'Country: ' + ${processinformation.Country}"/>
+
+</body>
+</html>
