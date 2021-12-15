@@ -7,37 +7,24 @@
 		<h1>G-Vision</h1>
 	</div>
 	<div class="bs-example">
-		<nav class="navbar navbar-default">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" 
-					data-target="#navbarCollapse" 
-					data-toggle="collapse" 
-					class="navbar-toggle"
-				>
-					<span class="sr-only"> Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand">GCU</a>
-			</div>
-			<!-- Collection of nav links and other content for toggling -->
-			<div id="navbarCollapse" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="http://localhost:8080/home" target="_blank">Home</a></li>
-					<li><a href="[[ENTER BIO PAGE HERE]]" target="_blank">Bio</a></li>
-					<li><a href="[[ENTER CONCEPT PAGE HERE]]" target="_blank">Concept</a></li>
-					<li><a href="[[ENTER PORTFOLIO PAGE HERE]]" target="_blank">Portfolio</a></li>
-					<li><a href="[[ENTER T&T PAGE HERE]]" target="_blank">T&T</a></li>
-					<li><a href="[[ENTER SHOP PAGE HERE]]" target="_blank">Shop</a></li>
-					<li><a href="http://localhost:8080/comingSoon" target="_blank">Coming Soon</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/">Start Page</a></li>
-				</ul>
-			</div>
-		</nav>
+		<nav class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient" style="background: linear-gradient(120deg, #7f70f5, #0ea0ff);
+  color: #fff;">
+        <div class="container"><a class="navbar-brand logo" th:href="@{/}">Gvision</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects-compact-grid.html">Bio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects-grid-cards.html">Concepts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects-no-images.html">Coming soon</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects-with-sidebar.html">T &amp; T</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="MuralsAndPaintings.html">Murals and paintings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 	</div>
 	
 	<!-- Page Title and Logo -->
