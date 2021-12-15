@@ -33,8 +33,17 @@ public String getPayment(Model model) {
 	
 }
 
+@GetMapping("/contact")
+public String contact()
+{
+	return "Contactus";
+}
 
-
+@GetMapping("/t&t")
+public String showTandT()
+{
+	return "TandT";
+}
 
 
 @PostMapping("/informationsubmit")
