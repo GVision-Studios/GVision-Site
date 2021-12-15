@@ -18,7 +18,7 @@ function openPage()
 	reveal(hidden[0]);
 	reveal(hidden[1]);
 	reveal(hidden[2]);
-	reveal(hidden[3]);
+
 }
 
 function reveal(element)
