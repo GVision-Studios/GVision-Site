@@ -5,8 +5,6 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Perceived Parcels</title>
-		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
@@ -22,16 +20,18 @@
 	
 	<body>
 		<div align="center">
-			<!-- Insert Header Fragment -->
-			<div th:replace="layouts/common :: header">My Header</div>
-			
-			<!-- Main Body Content -->
+			<!--Header Fragment Content -->
+			<div th:replace="layouts/common :: header">Header</div>
+
+			<!--Body Fragment Content -->
 			<section layout:fragment="content">
-				<p>My Body Contents</p>
+				<p>Body Contents</p>
 			</section>
-			
-			<!-- Insert Footer Fragement -->
-			<div th:replace="layouts/common :: footer">My Footer</div>
+			<!--Footer Fragment Content -->
+			<div th:replace="layouts/common :: footer">Footer</div>
+
 		</div>
+		<!--imports custom JavaScript-->
+		<script type="text/javascript" th:src="@{/javascript/app.js}"></script>
 	</body>
 </html>
