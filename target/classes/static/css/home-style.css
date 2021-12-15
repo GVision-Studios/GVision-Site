@@ -1,4 +1,4 @@
-.logo
+.logo1
 {
 	opacity: 0;
     position:absolute;
@@ -12,4 +12,9 @@
 #body
 {
 	background-color: #000000;
+}
+
+.hide
+{
+	opacity:0;
 }
