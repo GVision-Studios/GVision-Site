@@ -33,10 +33,10 @@ public String getPayment(Model model) {
 	
 }
 
-@GetMapping("/contact")
+@GetMapping("/concepts")
 public String contact()
 {
-	return "Contactus";
+	return "Concepts";
 }
 
 @GetMapping("/t&t")
