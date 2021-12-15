@@ -80,7 +80,11 @@ public String getContact(Model model) {
 	return "Contactus";
 }
 
-
+@GetMapping("/bio")
+public String getBio()
+{
+	return "bio";
+}
 
 @RequestMapping("/")
 
